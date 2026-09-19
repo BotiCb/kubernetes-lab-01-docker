@@ -6,7 +6,7 @@ It stores short notes (title + body) and keeps them in a JSON file, so the data 
 
 - Container port: **3000**
 - Host port (compose): **8400**
-- Image: `docker.io/boticb/notes-api:1.0.0`
+- Image: `docker.io/boti13/notes-api:1.0.0`
 
 ---
 
@@ -66,7 +66,7 @@ Without compose:
 docker run -d --name notes-api \
   -p 8400:3000 \
   -v notes-data:/data \
-  boticb/notes-api:1.0.0
+  boti13/notes-api:1.0.0
 ```
 
 Locally, without Docker (Node 22+, pnpm):

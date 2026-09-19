@@ -4,10 +4,10 @@ In Lab 1 you pick a programming language and framework of your choice, then buil
 
 The goal isn't to write a large application. It's to get comfortable packaging and running a service in a container, and to understand the moving parts around it: images, containers, ports, and volumes.
 
-I have pushed this image at the following URL: <https://hub.docker.com/r/boticb/notes-api>
+I have pushed this image at the following URL: <https://hub.docker.com/r/boti13/notes-api>
 
 ```bash
-docker pull boticb/notes-api:1.0.0
+docker pull boti13/notes-api:1.0.0
 ```
 
 My service lives in [`notes-api/`](notes-api): a small notes API (TypeScript / NestJS) that keeps its data in a JSON file on a volume. See [`notes-api/README.md`](notes-api/README.md) for the endpoints, the environment variables and how the image is built.

@@ -1,7 +1,7 @@
 services:
   notes-api:
     build: .
-    image: docker.io/boticb/notes-api:1.0.0
+    image: docker.io/boti13/notes-api:1.0.0
     container_name: notes-api
     init: true
     ports:
