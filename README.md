@@ -4,7 +4,13 @@ In Lab 1 you pick a programming language and framework of your choice, then buil
 
 The goal isn't to write a large application. It's to get comfortable packaging and running a service in a container, and to understand the moving parts around it: images, containers, ports, and volumes.
 
-I have pushed this image at the following URL: ... (complete here).
+I have pushed this image at the following URL: <https://hub.docker.com/r/boticb/notes-api>
+
+```bash
+docker pull boticb/notes-api:1.0.0
+```
+
+My service lives in [`notes-api/`](notes-api): a small notes API (TypeScript / NestJS) that keeps its data in a JSON file on a volume. See [`notes-api/README.md`](notes-api/README.md) for the endpoints, the environment variables and how the image is built.
 
 ---
 
@@ -23,14 +29,14 @@ I have pushed this image at the following URL: ... (complete here).
 
 Work through this before you submit.
 
-- [ ] I am using an up to date base image
-- [ ] If possible, I am caching all my dependencies before I build my final application.
-- [ ] Changing only my source code, but not dependencies, does not trigger a full dependency re-download and rebuild.
-- [ ] If possible, I am using a multistage build to hide my source code from the final image.
-- [ ] I have a **user** set up for my container, that is being used to run it.
-- [ ] I have all the ports I need to communicate to my container port forwarded using `ports`.
-- [ ] If I'm using any persistent data, I have it set up as a **volume**.
-- [ ] Extra points: a HEALTHCHECK is configured for my container.
+- [x] I am using an up to date base image
+- [x] If possible, I am caching all my dependencies before I build my final application.
+- [x] Changing only my source code, but not dependencies, does not trigger a full dependency re-download and rebuild.
+- [x] If possible, I am using a multistage build to hide my source code from the final image.
+- [x] I have a **user** set up for my container, that is being used to run it.
+- [x] I have all the ports I need to communicate to my container port forwarded using `ports`.
+- [x] If I'm using any persistent data, I have it set up as a **volume**.
+- [x] Extra points: a HEALTHCHECK is configured for my container.
 
 ---
 
